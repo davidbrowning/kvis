@@ -1,0 +1,41 @@
+/* kvis.css - Optional CSS for Textual App */
+
+Screen {
+    /* Add some padding around the edges */
+    padding: 1;
+}
+
+#resource-tree {
+    /* Add a border around the tree view */
+    border: round white;
+    padding: 1;
+    /* Ensure tree takes available space */
+    width: 100%;
+    height: 100%;
+}
+
+#error-view {
+    border: thick red;
+    padding: 1 2;
+    height: auto; /* Adjust height to content */
+    color: red;
+    text-style: bold;
+}
+
+/* Style the header and footer if desired */
+Header {
+    background: $accent;
+    color: $text;
+    text-style: bold;
+}
+
+Footer {
+    background: $accent-darken-2;
+}
+
+/* Customize tree node highlighting (alternative to reactive updates in Python) */
+/* KvisTree > .tree--cursor {
+    background: $accent;
+    color: $text;
+    text-style: bold;
+} */
